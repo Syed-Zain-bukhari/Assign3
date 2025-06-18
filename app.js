@@ -28,11 +28,11 @@ function findUSerdata(){
       .then(data => {
           const resultDiv = document.getElementById('result');
           resultDiv.innerHTML = `
-            <p><strong>Name:</strong> ${data.name || 'No name provided'}</p>
-            <p><strong>Username:</strong> ${data.login}</p>
-            <p><strong>Bio:</strong> ${data.bio || 'No bio available'}</p>
-            <p><strong>Public Repos:</strong> ${data.public_repos}</p>
-            <p><strong>Followers:</strong> ${data.followers}</p>
+            <p><b>Name:</b> ${data.name }</p>
+            <p><b>Username:</b> ${data.login}</p>
+            <p><b>Bio:</b> ${data.bio }</p>
+            <p><b>Public Repos:</b> ${data.public_repos}</p>
+            <p><b>Followers:</b> ${data.followers}</p>
             <img src="${data.avatar_url}" width="100">
           `;
         })
